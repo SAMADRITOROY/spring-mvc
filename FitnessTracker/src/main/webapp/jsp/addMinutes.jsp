@@ -21,15 +21,15 @@
         	$(document).ready(
                	function() {
                    	$.getJSON('<spring:url value="activities.json"/>', 
-                   	{ajax: 'true'},
-                   	function(data) {
-                       	var htmlStr = '<option value="">--Please select one--</option>';
-                       	var len = data.length;
-                       	for(var i=0; i<len; i++) {
-                           	htmlStr+= '<option value="'+ data[i].desc +'">' + data[i].desc + '</option>';
-                       	}
-                       	$('#activities').html(htmlStr);
-                   	})
+	                   	{ajax: 'true'},
+	                   	function(data) {
+	                       	var htmlStr = '<option value="">--Please select one--</option>';
+	                       	var len = data.length;
+	                       	for(var i=0; i<len; i++) {
+	                           	htmlStr+= '<option value="'+ data[i].desc +'">' + data[i].desc + '</option>';
+	                       	}
+	                       	$('#activities').html(htmlStr);
+	                   	})
                	}
            	);
         </script>
